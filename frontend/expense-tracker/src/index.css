@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-
 @theme {
-    --font-display: "Roboto", "sans-serif";
+    --font-display: "Poppins", "sans-serif";
     --breakpoint-3xl: 1920px;
     --color-primary: #875cf5;
 
 }
 
-@layer base{
-    html{
-        font-family: var(--font-display);
 
-    }
 
-    body{
-        background-color: #fcfbfc;
-        overflow-x: hidden;
-    }
+
+/* Use Tailwind's layer for base styles */
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+
+  body {
+    background-color: #fcfbfc;
+    overflow-x: hidden;
+  }
 }
